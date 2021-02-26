@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if (empty($name)) {
     echo "Husk at udfylde dit navn";
   } else {
-
+    // returns the name the user enters and selects a random number for 5 to 15 as part of the joke
     echo "Super ". $name. " , du skal ringe til " . rand(5, 15) . " venner, bare for at være sikker! :)";
   }
 }
